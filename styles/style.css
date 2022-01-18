@@ -22,23 +22,31 @@ body{
     align-items: center;
     width: 100%;
     margin: 0px;
+    border-style: solid 10px
+    ;
 }
 .nav-links{
     display: flex;
     align-items: center;
+    margin: 15px;
 }
 .nav-links p{
-
     font-size: 2rem;
+    font-weight: 100;
+}
+.nav-links p:hover{
+    color: #00B172;
+    cursor: pointer;
 }
 .music-everyone{
     background-image: url('/images/landing.jpg');
-    background-size: 100vh;
-    height: 90vh;
+    background-size: cover;
+    height: 100vh;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-repeat: no-repeat;
 }
 .music-everyone p{
     font-size: 3rem;
@@ -52,20 +60,24 @@ body{
     font-size: 7.3rem;
     
 }
+.spotify{
+    height: 60vh;
+}
+
 .spotify h2{
     text-align: center;
     text-decoration: #00B172 underline;
     text-underline-offset: 12px;
     font-size: 4rem;
 }
-.spotify h3{
-    font-size: 2rem;
-}
 .features{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     color: #00B172;
+}
+.features h3{
+    font-size: 2rem;
 }
 .features p{
     font-size: 30px;
@@ -75,26 +87,91 @@ body{
    
 }
 .kanye{
-    height: 60vh;
+    height: 80vh;
     background-color: #00B172;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 30px 0px 30px;
     padding-left: 50px;
+    display: flex;
+}
+.finding-music{
+    align-self: center;
+}
+.kanye-profile{
+    align-self: center;
 }
 
-.kanye h2{
+.finding-music h2{
     text-decoration: white underline;
-    text-underline-offset: 40px;
-    font-size: 4rem;
+    text-underline-offset: 25px;
+    font-size: 3.4rem;
     color: white;
-    font-weight: 300;
+    font-weight: 350;
 }
-.kanye h3{
+.finding-music h3{
     color: white;
     font-size: 2rem;
 
 }
-.kanye p{
+.finding-music p{
     color: white;
     font-size: 2rem;
    font-weight: 200;
 }
+.spotify-logo{
+    align-self: center;
+}
+
+@media(min-width:1024px){
+    .nav-title img{
+        height: 45px;
+        margin: 10px;
+    }
+    .nav-links p{
+        font-size: 1rem;
+        margin: 10px;
+    }
+    .music-everyone h1{
+       font-size: 4rem;
+    }
+    .music-everyone p{
+        font-size: 2rem;
+     }
+     .spotify h2{
+        font-size: 2rem;
+     }
+     .features h3{
+        font-size: 1.5rem;
+     }
+     .features p{
+         font-size: 18px;
+     }
+     .features img{
+         height: 70px;
+     }
+     .finding-music p{
+         font-size: 1rem;
+     }
+     .finding-music h2{
+         font-size: 1.8rem;
+         text-underline-offset: 10px;
+     }
+     .finding-music h3{
+         font-size: 1.3rem;
+     }
+     .spotify-logo img{
+         height: 110px;
+     }
+     .kanye-profile{
+        align-self: center;
+     }
+     .kanye-profile img{
+        height: 550px;
+        padding-right: 45px;
+     
+    }
+
+    .kanye{
+        display: flex;
+        justify-content: space-between;
+    }
+ }
